@@ -1,0 +1,16 @@
+n=int(input())
+a=[]
+j=1
+x1=0
+for i in range(n):
+    a.append(input())
+count_w={}
+s=set(a)
+print(len(s))
+for i in a:
+    if i in count_w:
+        count_w[i]+=1
+    else:
+        count_w[i]=1
+for x in count_w:
+    print(count_w[x],end=' ')
